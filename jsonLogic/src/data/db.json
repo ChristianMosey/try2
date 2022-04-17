@@ -1,0 +1,19 @@
+{
+    "tasks": [
+        {
+            "title": "Task1",
+            "dayOfWeek": [0, 1, 0, 0, 0, 0, 0],
+            "id": 1
+        },
+        {
+            "title": "Task2",
+            "dayOfWeek": [0, 0, 0, 0, 1, 0, 0],
+            "id": 2
+        },
+        {
+            "title": "Task3",
+            "dayOfWeek": [0, 1, 0, 0, 0, 0, 0],
+            "id": 3
+        }
+    ]
+}
