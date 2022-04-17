@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { Component, useEffect, useState } from 'react';
 import TaskList from "./components/TaskList.js";
+import CreatePlanner from "./components/CreatePlanner";
 
 
 
@@ -22,6 +22,7 @@ function App() {
   return (
     <div className="App">
       <div className="content">
+        <CreatePlanner></CreatePlanner>
       {tasks && <TaskList tasks={tasks} />}
       </div>
     </div>
