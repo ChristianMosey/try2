@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import { useState } from "react";
 
 const CreatePlanner = () => {
@@ -37,7 +38,7 @@ const CreatePlanner = () => {
 
   return (
     <div className="createPlanner">
-      <h2>Create a new Schedule:</h2>
+      <h2>Create a new Schedule</h2>
       <form onSubmit={handleSubmit}>
         <label>Event Name:</label>
         <input

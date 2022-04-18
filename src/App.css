@@ -1,8 +1,68 @@
-body {
-  font: 28px "Century Gothic", Futura, sans-serif;
+nav {
+  border: 20px solid #0021A5;
+  background: #0021A5;
+  color: orange;
+  font: 20px "Century Gothic", Futura, sans-serif;
+  font-weight: bold;
+}
+html{
+  background-color: #D8D4D7;
 }
 
+h2{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
 
+label{
+  margin: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+}
 
+button{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande','Lucida Sans', Arial, sans-serif;
+  margin-left: 300px;
+  margin-top: 20px;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+}
 
+p{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+a{
+  color: orange;
+  text-decoration:  none;
+  margin: 20px;
+}
+
+span{
+  margin: 20px;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
+}

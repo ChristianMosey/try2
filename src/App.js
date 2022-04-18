@@ -1,21 +1,19 @@
-import React from 'react';
-import './App.css';
-import Navbar from './Components/Navbar';
-import { BrowserRouter as Router, Routes, Route}
-    from 'react-router-dom';
-import Login from './pages/login.js';
-import Calender from './pages/calender.js';
+import "./App.css";
+import Navbar from "./components/Navbar";
+import CreatePlanner from "./components/CreatePlanner";
+import React, { Component }  from 'react';
 
 function App() {
-    return (
-        <Router>
-            <Navbar />
-            <Routes>
-                <Route exact path='/login' element={<Login/>} />
-                <Route path='/calender' element={<Calender/>} />
-            </Routes>
-        </Router>
-    );
+  //http://localhost:3002
+  const title = "Page to create schedule**";
+  return (
+    <div className="App">
+      <Navbar></Navbar>
+      <div className="content">
+        <CreatePlanner></CreatePlanner>
+      </div>
+    </div>
+  );
 }
 
 export default App;
