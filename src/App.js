@@ -5,14 +5,16 @@ import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';
 import Login from './pages/login.js';
 import Calender from './pages/calender.js';
+import CreatePlanner from "./Components/CreatePlanner";
 
 function App() {
     return (
         <Router>
-            <Navbar />
+            <Navbar></Navbar>
             <Routes>
-                <Route exact path='/login' element={<Login/>} />
+                <Route exact path='/' element={<Login/>} />
                 <Route path='/calender' element={<Calender/>} />
+                <Route path="/planner" element={<CreatePlanner/>}/>
             </Routes>
         </Router>
     );

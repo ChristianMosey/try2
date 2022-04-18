@@ -1,20 +1,13 @@
 import React from "react";
 import logo from '../Clock-up-logo.png';
 import GoogleLogin from "react-google-login";
-import './login.css';
 
 const Login = () => {
+
     return (
-        <div>
-            <p>Welcome to ClockUP! Please Login With Your Google Account</p>
+        <div className='login'>
+            <p>Welcome to ClockUP!</p>
             <img src={logo} width="250" height="173" alt={"Clock-Up-Logo"}/><br></br>
-            <GoogleLogin
-                clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
-                buttonText="Log in with Google"
-                onSuccess={onSignIn}
-                onFailure={onSignIn}
-                cookiePolicy={'single_host_origin'}
-            />
         </div>
     );
 }

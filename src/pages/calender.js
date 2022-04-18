@@ -1,11 +1,11 @@
 import React from "react";
+import Calender from "../Components/Calender";
 
-const Calender = () => {
+const CalenderPage = () => {
     return (
         <div>
-            <p>lol</p>
         </div>
     );
 }
 
-export default  Calender;
+export default  CalenderPage;

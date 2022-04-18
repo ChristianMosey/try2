@@ -1,8 +1,23 @@
 body {
   font: 28px "Century Gothic", Futura, sans-serif;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  text-align: center;
+  background-color: #5CDB95;
 }
 
+div.login {
+  font: 28px "Century Gothic", Futura, sans-serif;
+  position: fixed;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+}
 
+ol, ul {
+  padding-left: 30px;
+}
 
 
 
