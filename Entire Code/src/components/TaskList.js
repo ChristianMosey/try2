@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 
+
 const TaskList = ({ tasks }) => {
   return (
     <div className="task-list">
-      <h1>YOUR SCHEDULE: </h1>
+      <p style={{fontSize: 50, margin: "0 10px 0"}}>YOURSCHEDULE: </p>
 
       {tasks.map((task) => (
         <div className="task-preview" key={task.id}>

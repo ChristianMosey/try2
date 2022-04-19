@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { useEffect, useState } from "react";
-import TaskList from "./TaskList";
 
 const ViewList = () => {
   const [tasks, setTasks] = useState(null);

@@ -10,11 +10,11 @@ const Navbar = () => {
                     <NavLink to="/" activeStyle>
                         Home
                     </NavLink>
-                    <NavLink to="/calender" activeStyle>
-                        Calender
-                    </NavLink>
                     <NavLink to="/planner" activeStyle>
-                        Planner
+                        Add Events
+                    </NavLink>
+                    <NavLink to="/calender" activeStyle>
+                        View Schedule
                     </NavLink>
                 </NavMenu>
             </Nav>

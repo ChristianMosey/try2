@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { useState } from "react";
 
 const CreatePlanner = () => {
-  const [name, setName] = useState("a");
+  const [name, setName] = useState("");
 
   var [M_Box, setM_Box] = useState(false);
   var [T_Box, setT_Box] = useState(false); // false = second check box defaults to un-checked.
@@ -58,7 +58,8 @@ const CreatePlanner = () => {
         <input
           type="text"
           required
-          value={name}
+          defaultValue={""}
+          value={""}
           onChange={(e) => setName(e.target.value)}
         />
 

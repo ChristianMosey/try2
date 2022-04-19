@@ -1,7 +1,8 @@
+import React, { Component } from "react";
 import { useState } from "react";
-import React from "react";
+
 const CreatePlanner = () => {
-  const [name, setName] = useState("a");
+  const [name, setName] = useState("");
 
   var [M_Box, setM_Box] = useState(false);
   var [T_Box, setT_Box] = useState(false); // false = second check box defaults to un-checked.
@@ -11,8 +12,11 @@ const CreatePlanner = () => {
   var [Sat_Box, setSat_Box] = useState(false);
   var [Sun_Box, setSun_Box] = useState(false);
 
+  // for JSON server:
+  const [isPending, setIsPending] = useState(false);
+
   //TEST:
-  //const [week, setWeek] = useState({});
+  //var singleEvent = [];
 
   //const [time, setTime] = useState("");
   //const [type, setType] = useState("Unique One-Time");
@@ -32,88 +36,97 @@ const CreatePlanner = () => {
 
     const singleEvent = { name, week };
 
-    console.log(singleEvent);
+    setIsPending(true);
+
+    fetch("http://localhost:8000/tasks", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(singleEvent),
+    }).then(() => {
+      console.log("new task added");
+      setIsPending(false);
+    });
+    //console.log(singleEvent);
   };
 
   return (
-    <div className="createPlanner">
-      <h2>Create a new Schedule:</h2>
-      <form onSubmit={handleSubmit}>
-        <label>Event Name:</label>
-        <input
-          type="text"
-          required
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-
-        <label for="M">
+      <div className="createPlanner">
+        <p style={{fontSize: 50, margin: "0 0 0"}}>Create a new Event:</p>
+        <form onSubmit={handleSubmit}>
+          <label>Event Name:</label>
           <input
-            type="checkbox"
-            checked={M_Box}
-            onChange={() => setM_Box(!M_Box)}
-          ></input>
-          M
-        </label>
+              type="text"
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+          />
 
-        <label for="T">
-          <input
-            type="checkbox"
-            checked={T_Box}
-            onChange={() => setT_Box(!T_Box)}
-          ></input>
-          T
-        </label>
+          <label for="M">
+            <input
+                type="checkbox"
+                checked={M_Box}
+                onChange={() => setM_Box(!M_Box)}
+            ></input>
+            M
+          </label>
 
-        <label for="W">
-          <input
-            type="checkbox"
-            checked={W_Box}
-            onChange={() => setW_Box(!W_Box)}
-          ></input>
-          W
-        </label>
+          <label for="T">
+            <input
+                type="checkbox"
+                checked={T_Box}
+                onChange={() => setT_Box(!T_Box)}
+            ></input>
+            T
+          </label>
 
-        <label for="R">
-          <input
-            type="checkbox"
-            checked={R_Box}
-            onChange={() => setR_Box(!R_Box)}
-          ></input>
-          R
-        </label>
+          <label for="W">
+            <input
+                type="checkbox"
+                checked={W_Box}
+                onChange={() => setW_Box(!W_Box)}
+            ></input>
+            W
+          </label>
 
-        <label for="F">
-          <input
-            type="checkbox"
-            checked={F_Box}
-            onChange={() => setF_Box(!F_Box)}
-          ></input>
-          F
-        </label>
+          <label for="R">
+            <input
+                type="checkbox"
+                checked={R_Box}
+                onChange={() => setR_Box(!R_Box)}
+            ></input>
+            R
+          </label>
 
-        <label for="Sat">
-          <input
-            type="checkbox"
-            checked={Sat_Box}
-            onChange={() => setSat_Box(!Sat_Box)}
-          ></input>
-          Sat
-        </label>
+          <label for="F">
+            <input
+                type="checkbox"
+                checked={F_Box}
+                onChange={() => setF_Box(!F_Box)}
+            ></input>
+            F
+          </label>
 
-        <label for="Sun">
-          <input
-            type="checkbox"
-            checked={Sun_Box}
-            onChange={() => setSun_Box(!Sun_Box)}
-          ></input>
-          Sun
-        </label>
+          <label for="Sat">
+            <input
+                type="checkbox"
+                checked={Sat_Box}
+                onChange={() => setSat_Box(!Sat_Box)}
+            ></input>
+            Sat
+          </label>
 
-        <button>Submit This Event</button>
-        <p>{name}</p>
-      </form>
-    </div>
+          <label for="Sun">
+            <input
+                type="checkbox"
+                checked={Sun_Box}
+                onChange={() => setSun_Box(!Sun_Box)}
+            ></input>
+            Sun
+          </label>
+
+          <button>Submit This Event</button>
+        </form>
+      </div>
   );
 };
 

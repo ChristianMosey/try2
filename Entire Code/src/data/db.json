@@ -1,95 +1,147 @@
 {
   "tasks": [
     {
-      "name": "Task1",
+      "name": "M31-M32 HW&LC due",
       "week": [
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "id": 1
     },
     {
-      "name": "Task2",
+      "name": "Quiz: M27-M32",
       "week": [
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      "id": 2
-    },
-    {
-      "name": "Task3",
-      "week": [
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "id": 3
     },
     {
-      "name": "BIG MAN TEST",
+      "name": "Project 4 Peer Reviews",
       "week": [
-        true,
-        true,
+        false,
         true,
         false,
         false,
         false,
-        true
+        false,
+        false
       ],
       "id": 4
     },
     {
-      "name": "another one?",
+      "name": "Exam 3 Part 1",
       "week": [
         true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
         false
       ],
       "id": 5
     },
     {
-      "name": "test for another",
-      "week": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false
-      ],
-      "id": 6
-    },
-    {
-      "name": "abcfefe;l",
+      "name": "Project Documentation",
       "week": [
         false,
         false,
-        false,
+        true,
         false,
         false,
         false,
         false
       ],
       "id": 7
+    },
+    {
+      "name": "Project Submission",
+      "week": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "id": 8
+    },
+    {
+      "name": "End Of Classes",
+      "week": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "id": 10
+    },
+    {
+      "name": "GatorEvals",
+      "week": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "id": 11
+    },
+    {
+      "name": "CEN3031",
+      "week": [
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "id": 12
+    },
+    {
+      "name": "Kickball",
+      "week": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "id": 14
+    },
+    {
+      "name": "SWE Research Project",
+      "week": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "id": 15
     }
   ]
 }

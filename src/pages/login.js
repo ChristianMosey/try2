@@ -6,8 +6,10 @@ const Login = () => {
 
     return (
         <div className='login'>
+            <body></body>
             <p>Welcome to ClockUP!</p>
             <img src={logo} width="250" height="173" alt={"Clock-Up-Logo"}/><br></br>
+            <body></body>
         </div>
     );
 }
