@@ -7,11 +7,14 @@ const Navbar = () => {
         <>
             <Nav>
                 <NavMenu>
-                    <NavLink to="/login" activeStyle>
-                        Login
+                    <NavLink to="/" activeStyle>
+                        Home
+                    </NavLink>
+                    <NavLink to="/planner" activeStyle>
+                        Add Events
                     </NavLink>
                     <NavLink to="/calender" activeStyle>
-                        Home
+                        View Schedule
                     </NavLink>
                 </NavMenu>
             </Nav>

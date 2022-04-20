@@ -1,0 +1,147 @@
+{
+  "tasks": [
+    {
+      "name": "M31-M32 HW&LC due",
+      "week": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "id": 1
+    },
+    {
+      "name": "Quiz: M27-M32",
+      "week": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "id": 3
+    },
+    {
+      "name": "Project 4 Peer Reviews",
+      "week": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "id": 4
+    },
+    {
+      "name": "Exam 3 Part 1",
+      "week": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "id": 5
+    },
+    {
+      "name": "Project Documentation",
+      "week": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "id": 7
+    },
+    {
+      "name": "Project Submission",
+      "week": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "id": 8
+    },
+    {
+      "name": "End Of Classes",
+      "week": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "id": 10
+    },
+    {
+      "name": "GatorEvals",
+      "week": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "id": 11
+    },
+    {
+      "name": "CEN3031",
+      "week": [
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "id": 12
+    },
+    {
+      "name": "Kickball",
+      "week": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      "id": 14
+    },
+    {
+      "name": "SWE Research Project",
+      "week": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ],
+      "id": 15
+    }
+  ]
+}
